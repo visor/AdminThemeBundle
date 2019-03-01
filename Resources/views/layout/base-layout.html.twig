@@ -46,10 +46,10 @@
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
                             {% block avanzu_navbar %}
-                                {{ render(controller('@AvanzuAdminTheme/Navbar/messages')) }}
-                                {{ render(controller('@AvanzuAdminTheme/Navbar/notifications')) }}
-                                {{ render(controller('@AvanzuAdminTheme/Navbar/tasks')) }}
-                                {{ render(controller('@AvanzuAdminTheme/Navbar/user')) }}
+                                {{ render(controller('AvanzuAdminThemeBundle:Navbar:messages')) }}
+                                {{ render(controller('AvanzuAdminThemeBundle:Navbar:notifications')) }}
+                                {{ render(controller('AvanzuAdminThemeBundle:Navbar:tasks')) }}
+                                {{ render(controller('AvanzuAdminThemeBundle:Navbar:user')) }}
                             {% endblock %}
                         </ul>
                     </div>
