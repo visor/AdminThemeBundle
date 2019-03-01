@@ -4,7 +4,7 @@ Note: these instructions are for [dev-master branch][4], if you are using stable
 
 In order to use the layout, your views should extend from the provided `default-layout`
 ```twig
-{% extends 'AvanzuAdminThemeBundle:layout:default-layout.html.twig' %}
+{% extends '@AvanzuAdminTheme/layout/default-layout.html.twig' %}
 ```
 ### twig global 
 Instead of fully relying on blocks and includes, you are provided with a twig global named `avanzu_admin_context` to store and retrieve particular values throughout the page rendering. 
