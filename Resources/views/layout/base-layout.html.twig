@@ -64,10 +64,10 @@
             <section class="sidebar">
                 {% block avanzu_sidebar %}
                     {% if app.user is not null and is_granted('IS_AUTHENTICATED_REMEMBERED') %}
-                        {{ render(controller('@AvanzuAdminTheme/Sidebar/userPanel')) }}
-                        {{ render(controller('@AvanzuAdminTheme/Sidebar/searchForm')) }}
+                        {{ render(controller('AvanzuAdminThemeBundle:Sidebar:userPanel')) }}
+                        {{ render(controller('AvanzuAdminThemeBundle:Sidebar:searchForm')) }}
                     {% endif %}
-                    {{ render(controller('@AvanzuAdminTheme/Sidebar/menu', {'request':app.request})) }}
+                    {{ render(controller('AvanzuAdminThemeBundle:Sidebar:menu', {'request':app.request})) }}
                 {% endblock %}
             </section>
             <!-- /.sidebar -->
@@ -82,7 +82,7 @@
                     <small>{% block page_subtitle %}{{ 'Control panel'|trans({}, 'AvanzuAdminTheme') }}{% endblock %}</small>
                 </h1>
                 {% block avanzu_breadcrumb %}
-                    {{ render(controller('@AvanzuAdminTheme/Breadcrumb/breadcrumb', {'request':app.request, 'title' : block('page_title')})) }}
+                    {{ render(controller('AvanzuAdminThemeBundle:Breadcrumb:breadcrumb', {'request':app.request, 'title' : block('page_title')})) }}
                 {% endblock %}
             </section>
 
