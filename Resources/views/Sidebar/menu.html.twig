@@ -1,6 +1,6 @@
 <!-- sidebar menu: : style can be found in sidebar.less -->
 {% from "@AvanzuAdminTheme/layout/macros.html.twig" import menu_item %}
-<ul class="sidebar-menu tree">
+<ul class="sidebar-menu tree" data-widget="tree">
     {% for item in menu %}
         {{ menu_item(item) }}
     {% endfor %}
